@@ -1,7 +1,8 @@
 ## 1. Git의 기초
  사용하는 이유 및 사용과정에 대한 설명
 
----
+
+
 
 - 파일의 수정본, 협업이 필요할 때 효율적으로 관리할 수 있는 방안?
 - delta와 snapshot이 필요해진다. 
@@ -49,9 +50,12 @@ git은 파일을 추적하지 않는다. 각 문자와 줄을 추적한다.(어�
 
 
 
----
+
+
+
 ## 2. githib실습하기
----
+
+
 
 - git을 회사서버나 원격서버에 깔고 같이 관리하는 방법은 힘들다. 따라서 여러사람이 협업하기 위해 사용하는 원격호스팅방법이 github, gitlab이다. opensource를 github에서 관리하고 개발을 github에서 하게 된다. 
 
@@ -64,16 +68,15 @@ git은 파일을 추적하지 않는다. 각 문자와 줄을 추적한다.(어�
 
 
 
----
-### 2. 프로젝트 시작 선언
----
-
+- **프로젝트 시작 선언**
 - **git init**(git초기화 의미 로컬에서 진행한다-트리의 시작점이라고 생각한다, 축의 흐름을 master 가지라고 생각한다)
 - 버전 저장은 .git(컴퓨터에서는 숨김파일이다. 버전의 snapshot정보를 의미한다)
 - 저장이 싫다면 .gitignore파일로 작성한다. 
 - readme.md : 설명작성
 어떻게 보면 readme가 포트폴리오로 발전할 수 있는 기반이 될 수가 있다. 
 프로젝트의 설명, 사용방법, license 등을 기술 + repo의 mainpage를 기술
+
+
 
 **readme의 순서에 대한 예제**
 1. 프로젝트 내용(이미지, 로고)
@@ -100,6 +103,9 @@ git은 파일을 추적하지 않는다. 각 문자와 줄을 추적한다.(어�
 - **git remote add origin [url]** : origin이라는 이름으로 [url]과 연결
 (원격으로 올리기 전에 url연결해 주는 것을 의미한다. origin은 일종의 관용어이다.)
 - **git push origin master** : 원격 저장소 master branch에 업데이트, 메인 버전을 origin에 업데이트 하겠다는 의미(동기화 완성)-push완성
+
+
+
 
 
 
@@ -144,6 +150,8 @@ git commit -m 'add readme.md' : 실제로 커밋하는 방법
 - git log --all : 이전의 수정사항까지의 log를 전체 확인하는 방법
 
 ---
+
+
 - git help : 어떤 명령어를 사용해야 할지에 대한 overview가 나온다. 
 
 - git remote add origin https://github.com/chunghyunhee/github_practice.git
@@ -153,6 +161,7 @@ git commit -m 'add readme.md' : 실제로 커밋하는 방법
 
 - (실제 repository를 F5하면, 이제까지 작업하던 내용이 변경된 것을 
 볼 수가 있다. 실제 github에서의 commit을 보면, 어떤 변경사항이 있었는지를 code형태로 볼 수가 있다.또한 바로 코드리뷰 기능가능 )
+
 
 
 
@@ -183,6 +192,8 @@ git commit -m 'add readme.md' : 실제로 커밋하는 방법
 ## sourcetree에서 visual로 보는 경우
 - code . : visual studio code에서 새로운 code내용을 만든다(여기서는 newfile.txt파일을 생성했다. 이후에 sourcetree에서 F5를 하면, ‘커밋하지 않은 새로운 파일’이 생성된다.아직 stage에 올리지 않은 파일임을 의미한다.  )
 - sourcetree에서 ‘파일 상태’에서 선택파일 stage에 올리기를 통해 stage가능
+
+
 
 
 
